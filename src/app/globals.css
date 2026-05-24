@@ -1,26 +1,45 @@
+/* 1. Import Tailwind v4 */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* 2. Define our design tokens
+   The @theme block is Tailwind v4's way of registering custom values.
+   Anything we put here becomes available as a utility class automatically.
+   For example, --color-olive becomes "bg-olive", "text-olive", "border-olive". */
+@theme {
+  /* Primitive colors — the raw values */
+  --color-olive: #3D4A2A;
+  --color-olive-deep: #2C3820;
+  --color-cream: #F5F1E8;
+  --color-cream-soft: #EFE9D8;
+  --color-cream-warm: #FAF6EA;
+  --color-gold: #C8A951;
+  --color-ink: #1A1A1A;
+  --color-ink-soft: #5F5E58;
+  --color-ink-muted: #8B8778;
+
+  /* Semantic colors — roles that map to primitives.
+     We use these in components so that meaning is preserved
+     even if we later swap the underlying palette. */
+  --color-background: var(--color-cream);
+  --color-surface: var(--color-cream-soft);
+  --color-card: var(--color-cream-warm);
+  --color-foreground: var(--color-ink);
+  --color-muted: var(--color-ink-soft);
+  --color-subtle: var(--color-ink-muted);
+  --color-primary: var(--color-olive);
+  --color-primary-hover: var(--color-olive-deep);
+  --color-accent: var(--color-gold);
+
+  /* Typography — we'll wire up real fonts in the next step.
+     For now, system fallbacks. */
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* 3. Base styles — defaults that apply to the whole site */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
