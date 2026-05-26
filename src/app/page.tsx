@@ -13,7 +13,7 @@ export default function Home() {
           <p className="text-muted mb-8">Testing the primitives.</p>
           <div className="flex gap-3">
             <Button href="/work">See the work</Button>
-            <Button href="/contact" variant="secondary">
+            <Button href="/contact" variant="outline">
               Start a project
             </Button>
           </div>

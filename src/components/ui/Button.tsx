@@ -4,7 +4,7 @@ import Link from "next/link";
 type ButtonProps = {
   children: ReactNode;
   href: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "outline";
   className?: string;
 };
 
@@ -19,7 +19,7 @@ export default function Button({
 
   const variantStyles = {
     primary: "bg-primary text-background hover:bg-primary-hover",
-    secondary:
+    outline:
       "border border-primary text-primary hover:bg-primary hover:text-background",
   };
 
