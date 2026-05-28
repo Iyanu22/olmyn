@@ -33,6 +33,7 @@
   /* Typography — we'll wire up real fonts in the next step.
      For now, system fallbacks. */
   --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-serif), ui-serif, Georgia, serif;
 }
 
 /* 3. Base styles — defaults that apply to the whole site */

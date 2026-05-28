@@ -7,16 +7,16 @@ export default function About() {
     <Section id="about">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start">
-          <div className="relative aspect-[4/5] rounded-lg overflow-hidden bg-cream-soft max-w-sm">
+          <div className="relative aspect-4/5 rounded-lg overflow-hidden bg-cream-soft max-w-sm">
             <Image
               src="/olmyn-profile.jpg"
               alt="Portrait of the founder of Olmyn"
               fill
-              className="object-cover object-[center_90%] [filter:sepia(0.15)_saturate(0.9)_brightness(1.02)]"
+              className="object-cover object-[center_90%] filter:sepia(0.15)_saturate(0.9)_brightness(1.02)]"
               sizes="(max-width: 768px) 100vw, 50vw"
               priority={false}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/15 via-transparent to-transparent pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/15 via-transparent to-transparent pointer-events-none" />
           </div>
 
           <div>
