@@ -1,4 +1,5 @@
 import About from "../components/sections/About";
+import ContactCta from "../components/sections/ContactCta";
 import Faq from "../components/sections/Faq";
 import Hero from "../components/sections/Hero";
 import Process from "../components/sections/Process";
@@ -17,6 +18,7 @@ export default function Home() {
           <About />
           <Testimonials />
           <Faq />
+          <ContactCta />
         </>
   );
 }
