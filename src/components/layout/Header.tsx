@@ -16,7 +16,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-xl font-medium tracking-tight text-primary"
+            className="text-2xl font-medium tracking-tight text-primary"
           >
             olmyn
           </Link>
@@ -25,7 +25,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-foreground hover:text-primary transition-colors"
+                className="text-base text-foreground hover:text-primary transition-colors"
               >
                 {link.label}
               </Link>

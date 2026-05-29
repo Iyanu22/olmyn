@@ -10,7 +10,7 @@ export default function ContactCta() {
           Got something to build?
         </h2>
 
-        <p className="text-lg text-background/80 mb-10">
+        <p className="text-xl text-background/80 mb-10">
           Let&rsquo;s talk about your project.
         </p>
 
@@ -23,11 +23,11 @@ export default function ContactCta() {
           </Button>
         </div>
 
-        <p className="text-sm text-background/60 mb-12">
+        <p className="text-base text-background/60 mb-12">
           Reply within 24 hours, Monday–Friday.
         </p>
 
-        <p className="text-sm text-accent tracking-wide">
+        <p className="text-base text-accent tracking-wide">
           Mine to build, yours to own.
         </p>
       </Container>

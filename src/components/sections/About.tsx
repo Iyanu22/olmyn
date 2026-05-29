@@ -20,7 +20,7 @@ export default function About() {
           </div>
 
           <div>
-            <p className="text-xs font-medium text-accent uppercase tracking-wider mb-4">
+            <p className="text-lg font-medium text-accent uppercase tracking-wider mb-4">
               About
             </p>
 
@@ -28,7 +28,7 @@ export default function About() {
               About Olmyn
             </h2>
 
-            <div className="space-y-5 text-foreground leading-relaxed">
+            <div className="space-y-5 text-lg text-foreground leading-relaxed">
               <p>
                 Olmyn is a one-person web studio based in Lagos, building for
                 clients worldwide. The name comes from Olamide — my Yoruba name

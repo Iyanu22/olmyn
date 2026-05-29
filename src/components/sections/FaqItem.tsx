@@ -18,7 +18,7 @@ export default function FaqItem({
         className="w-full flex items-center justify-between text-left group"
         aria-expanded={isOpen}
       >
-        <span className="text-base font-medium text-foreground">
+        <span className="text-lg font-medium text-foreground">
           {question}
         </span>
         <span
@@ -32,7 +32,7 @@ export default function FaqItem({
       </button>
 
       {isOpen && (
-        <p className="mt-4 text-sm text-muted leading-relaxed max-w-2xl">
+        <p className="mt-4 text-base text-muted leading-relaxed max-w-2xl">
           {answer}
         </p>
       )}

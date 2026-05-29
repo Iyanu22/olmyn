@@ -33,13 +33,13 @@ export default function Process() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
           {steps.map((step) => (
             <div key={step.number}>
-              <div className="text-sm font-medium text-accent mb-3">
+              <div className="text-base font-medium text-accent mb-3">
                 {step.number}
               </div>
-              <h3 className="text-lg font-medium text-foreground mb-2">
+              <h3 className="text-xl font-medium text-foreground mb-2">
                 {step.title}
               </h3>
-              <p className="text-sm text-muted leading-relaxed">
+              <p className="text-base text-muted leading-relaxed">
                 {step.description}
               </p>
             </div>

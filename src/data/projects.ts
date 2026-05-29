@@ -2,14 +2,16 @@ export type Project = {
   slug: string;
   name: string;
   category: string;
+  image?: string;
   cardColor: string;
 };
 
 export const projects: Project[] = [
   {
-    slug: "lagos-bloom",
-    name: "Lagos Bloom Florist",
-    category: "E-commerce — WooCommerce",
+    slug: "pickup",
+    name: "Pickup Logistics",
+    category: "Logistics WebApp — React",
+    image: "/projects/flyer_2.jpg",
     cardColor: "bg-cream-soft",
   },
   {

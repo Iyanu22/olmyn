@@ -12,7 +12,7 @@ export default function Hero() {
           yours to own.
         </h1>
 
-        <p className="text-lg text-muted max-w-xl mb-10 leading-relaxed">
+        <p className="text-xl text-muted max-w-xl mb-10 leading-relaxed">
           I build websites and web apps for businesses that care about how
           things are made.
         </p>

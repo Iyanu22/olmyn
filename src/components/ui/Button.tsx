@@ -15,7 +15,7 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-medium transition-colors";
+    "inline-flex items-center justify-center rounded-md px-5 py-3 text-base font-medium transition-colors";
 
   const variantStyles = {
     primary: "bg-primary text-background hover:bg-primary-hover",

@@ -43,7 +43,7 @@ export default function Testimonials() {
               key={testimonial.name}
               className="bg-card rounded-lg p-6 flex flex-col"
             >
-              <p className="font-serif italic text-lg text-foreground leading-relaxed mb-8 flex-1">
+              <p className="font-serif italic text-xl text-foreground leading-relaxed mb-8 flex-1">
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
@@ -53,10 +53,10 @@ export default function Testimonials() {
                   variant={testimonial.avatarVariant}
                 />
                 <div>
-                  <div className="text-sm font-medium text-foreground">
+                  <div className="text-base font-medium text-foreground">
                     {testimonial.name}
                   </div>
-                  <div className="text-xs text-muted">{testimonial.role}</div>
+                  <div className="text-sm text-muted">{testimonial.role}</div>
                 </div>
               </div>
             </div>

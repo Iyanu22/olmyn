@@ -36,13 +36,13 @@ export default function Services() {
               key={service.name}
               className="bg-card border border-primary/20 rounded-lg p-6 flex flex-col"
             >
-              <h3 className="text-lg font-medium text-foreground mb-3">
+              <h3 className="text-xl font-medium text-foreground mb-3">
                 {service.name}
               </h3>
-              <p className="text-sm text-muted leading-relaxed mb-6 flex-1">
+              <p className="text-base text-muted leading-relaxed mb-6 flex-1">
                 {service.description}
               </p>
-              <div className="text-sm font-medium text-primary">
+              <div className="text-base font-medium text-primary">
                 <span className="text-muted font-normal">From </span>
                 {service.priceFrom}
               </div>
